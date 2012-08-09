@@ -77,5 +77,5 @@ functionality. Lint and test your code using
 Copyright (c) 2012 Ken Elf Mathieu Sternberg  
 Licensed under the MIT license.
 
-The libraries packaged with this demostration are copyright their
+The libraries packaged with this demonstration are copyright their
 respective owners.
