@@ -1,0 +1,28 @@
+{
+    "name": "couchexperiment",
+    "title": "CouchExperiment",
+    "description": "Grunt.JS exploration working with CouchDB.",
+    "version": "0.1.0",
+    "homepage": "http://elfsternberg.com",
+    "author": {
+        "name": "Elf M. Sternberg",
+        "email": "elf.sternberg@gmail.com"
+    },
+    "repository": {
+        "type": "svn",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "licenses": [
+        {
+            "url": "file://./LICENSE",
+            "type": "All Rights Reserved"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">= 1.6"
+    },
+    "keywords": []
+}

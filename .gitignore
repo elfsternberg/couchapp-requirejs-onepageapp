@@ -1,0 +1,16 @@
+*.pyc
+*.pyo
+*#
+.#*
+.DS_Store
+*~
+npm-debug.log
+node_modules/*
+app/*
+dist/*
+dist-compiled/*
+app/*
+src/*.html
+src/*.js
+src/*.css
+tmp/
