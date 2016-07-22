@@ -14,3 +14,4 @@ src/*.html
 src/*.js
 src/*.css
 tmp/
+package.yml

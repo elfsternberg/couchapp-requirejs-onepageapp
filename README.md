@@ -15,9 +15,20 @@ You will need: Node.js and the Ruby version of Haml.  You might need
 the global version of require.js (r.js) installed; I do, so I haven't
 tested without it.
 
-This project is written in Coffeescript and HAML, and uses Grunt as
-its build tool.  You should have a copy of CouchDB running in
-"AdminParty mode."
+This project is written in Coffeescript and HAML, and uses Grunt as its
+build tool.  You should have a copy of CouchDB running in "AdminParty
+mode."  The best way I've found recently to get CouchDB running is to
+use docker.  The base CouchDB image from Apache is fine.  For example,
+from the project directory:
+
+$ docker pull couchdb
+$ mkdir data
+$ docker run -d -p 5984:5984 -v $(pwd)/data:/usr/local/var/lib/couchdb --name my-couchdb couchdb
+
+This command will start CouchDB in a docker container with a fairly
+small instance of the Erlang BEAM, expose CouchDB's port on localhost,
+and export the docker's internal storage volume to your local filesytem
+in the new 'data' directory.
 
 As with all NPM-based projects, you should run:
 
