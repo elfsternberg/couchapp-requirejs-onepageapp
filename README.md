@@ -21,9 +21,9 @@ mode."  The best way I've found recently to get CouchDB running is to
 use docker.  The base CouchDB image from Apache is fine.  For example,
 from the project directory:
 
-$ docker pull couchdb
-$ mkdir data
-$ docker run -d -p 5984:5984 -v $(pwd)/data:/usr/local/var/lib/couchdb --name my-couchdb couchdb
+    $ docker pull couchdb
+    $ mkdir data
+    $ docker run -d -p 5984:5984 -v $(pwd)/data:/usr/local/var/lib/couchdb --name my-couchdb couchdb
 
 This command will start CouchDB in a docker container with a fairly
 small instance of the Erlang BEAM, expose CouchDB's port on localhost,
@@ -32,23 +32,23 @@ in the new 'data' directory.
 
 As with all NPM-based projects, you should run:
 
-$ npm install
+    $ npm install
 
 to get started.  A pair of convenience scripts are located in the
 'bin/' directory.  From the root of the application, when in Bash or a
 related shell, run:
 
-$ source bin/activate
+    $ source bin/activate
 
 This will put all of the executables installed in
 "./node_modules/.bin" into your path, making them available to you
 (and grunt).  Now create a new database:
 
-$ curl -X PUT http://localhost:5984/demo-couchapp
+    $ curl -X PUT http://localhost:5984/demo-couchapp
 
 Now run the build and install:
 
-$ gruntc
+    $ gruntc
 
 And now it should be possible to browse to 
 
