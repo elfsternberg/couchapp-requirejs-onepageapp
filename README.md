@@ -9,6 +9,10 @@ possible to automate the integration of
 
 The answer is this project.
 
+# Status
+
+This project is **complete**.  It is not being maintained.
+
 ## Getting Started
 
 You will need: Node.js and the Ruby version of Haml.  You might need
